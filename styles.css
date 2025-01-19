@@ -1,0 +1,165 @@
+/* إعدادات عامة */
+body {
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #49161F; /* خلفية داكنة بني */
+    color: #E1B143; /* الخط بيج */
+    direction: rtl;
+    text-align: center;
+    font-size: 16px;
+}
+
+/* الهيدر */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #49161F; /* بني داكن */
+    color: #f5deb3; 
+/* بيج */
+    /* تغيير لون كلمة "واثِق" */
+.brand-name {
+    color: #E1B143; /* اللون الذهبي مثلاً */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* تأثير 3D */
+}
+    padding: 20px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* تأثير 3D */
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+}
+
+header h1 {
+    font-size: 2em;
+    margin: 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* تأثير 3D */
+}
+
+.intro-text {
+    font-size: 1.2em;
+    margin-top: 10px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3); /* تأثير 3D */
+}
+
+/* زيادة المسافة بين الهيدر والأقسام */
+main {
+    margin-top: 40px; /* المسافة بين الهيدر والأقسام */
+}
+
+/* الأقسام */
+section {
+    margin-bottom: 30px; /* زيادة التباعد بين الأقسام */
+    background-color: #49161F; /* بني داكن */
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); /* تأثير 3D */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 95%; /* تقليل العرض */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section:hover {
+    transform: scale(1.02); /* تكبير بسيط عند المرور */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6); /* تأثير أكبر */
+}
+
+section h2 {
+    color: #E1B143; /* ذهبي */
+    font-size: 1.2em; /* حجم النص */
+    margin-bottom: 10px;
+}
+
+.app-description {
+    font-size: 0.9rem; /* حجم النص الداخلي */
+    color: #d2b48c; /* لون مختلف للنصوص */
+    margin: 10px 0;
+}
+
+.download-button {
+    display: inline-block;
+    font-size: 0.9rem;
+    padding: 10px 20px;
+    color: #49161F; /* لون النص */
+    background-color: #E1B143; /* لون الزر */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+    background-color: #E1B143; /* لون الزر عند المرور */
+}
+
+/* الفوتر */
+footer {
+    text-align: center;
+    background-color: #49161F; /* بني داكن */
+    color: #f5deb3; /* بيج */
+    padding: 10px 0;
+    box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.5); /* تأثير 3D */
+}
+/* قائمة الحسابات */
+.account-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.account-list li {
+    margin-bottom: 10px;
+}
+
+.account-link {
+    color: #ffdead; /* بيج فاتح */
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.account-link:hover {
+    color: #E1B143; /* ذهبي فاتح */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4); /* تأثير 3D */
+}
+
+/* الاستجابة للأجهزة الصغيرة (هواتف) */
+@media only screen and (max-width: 600px) {
+    .account-link {
+        font-size: 1em; /* تقليل حجم الخط في الهواتف */
+    }
+}
+
+    header h1 {
+        font-size: 1.5em; /* تقليل حجم العنوان */
+    }
+
+    .intro-text {
+        font-size: 1em; /* تقليل حجم النص */
+    }
+
+    section {
+        width: 90%; /* تقليل عرض الأقسام أكثر في الهواتف */
+        padding: 10px; /* تقليل الحشو داخل الأقسام */
+    }
+
+    section h2 {
+        font-size: 1em; /* تقليل حجم العناوين */
+    }
+
+    .download-button {
+        padding: 8px 16px; /* تقليل حجم الأزرار */
+        font-size: 0.8rem; /* تقليل حجم النص في الأزرار */
+    }
+}
