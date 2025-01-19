@@ -16,12 +16,32 @@ header {
     flex-direction: column;
     align-items: center;
     background-color: #49161F; /* بني داكن */
-    color: #f5deb3; 
-/* بيج */
+    color: #d2b48c; /* بيج */
+    padding: 20px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* تأثير 3D */
     /* تغيير لون كلمة "واثِق" */
 .brand-name {
-    color: #E1B143; /* اللون الذهبي مثلاً */
+    color: #E1B143; /* اللون الذهبي على سبيل المثال */
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* تقليل المسافة بين اللوجو والنص */
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+header h1 {
+    font-size: 2em;
+    margin: 0;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* تأثير 3D */
+}
 }
     padding: 20px;
     border-bottom-left-radius: 30px;
